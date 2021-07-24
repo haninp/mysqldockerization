@@ -2,7 +2,7 @@
 
 #symbolic-links	    = 0
 bind-address	    = 0.0.0.0
-#default-time-zone   = "Asia/Jakarta"
+default-time-zone   = "Asia/Jakarta"
 #log_error           = /var/log/error.log
 sql_mode		    = ""
 #log_warnings       = 2

@@ -1,0 +1,13 @@
+[mysqld]
+
+open_files_limit		= 30000
+max_allowed_packet		= 32M
+max_connections			= 2000
+tmp_table_size			= 256M
+max_heap_table_size		= 256M
+tmpdir				    = /tmp
+memlock				    = 0
+sysdate_is_now			= 1
+table_open_cache		= 1024
+lower_case_table_names	= 0
+group_concat_max_len	= 6294967295

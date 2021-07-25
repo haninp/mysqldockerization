@@ -5,3 +5,11 @@ services:
     image: 'customdb:latest'
     mem_limit: 2G
     restart: always
+    ports: 
+        - 9033:3306
+    volumes:
+        - db-one:/var/lib/mysql
+
+volumes:
+  db-one:
+    external: true

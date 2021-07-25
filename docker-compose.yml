@@ -3,13 +3,10 @@ services:
   db:
     container_name: customdb-5
     image: 'customdb:latest'
-    mem_limit: 2G
-    restart: always
     ports: 
         - 9035:3306
     volumes:
         - db-one:/var/lib/mysql
-
 volumes:
   db-one:
     external: true

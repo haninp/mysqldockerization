@@ -1,42 +1,7 @@
 version: '2'
 services:
-
   db:
-    container_name: nama-container
+    container_name: customdb-3
     image: 'customdb:latest'
     mem_limit: 2G
     restart: always
-    # volumes:
-    #   - './db-data/varlib:/var/lib/mysql'
-    #   - './db-data/varlog:/var/log/mysql'
-    #   - './db-data/tmp:/tmp'
-# # # # # Jika anda merubah sesuatu diantara salah satu file dibawah, 
-# # # # # maka silahkan untuk mengaktifkan line
-#       - './mysql-conf/conf.d/docker.cnf:/etc/mysql/conf.d/docker.cnf' #DEFAULT
-#       - './mysql-conf/conf.d/mysql.cnf:/etc/mysql/conf.d/mysql.cnf' #DEFAULT
-#       - './mysql-conf/conf.d/finetune.cnf:/etc/mysql/conf.d/finetune.cnf'
-#       - './mysql-conf/conf.d/innodb.cnf:/etc/mysql/conf.d/innodb.cnf'
-#       - './mysql-conf/conf.d/initial.cnf:/etc/mysql/conf.d/initial.cnf'
-#       - './mysql-conf/conf.d/slowquery.cnf:/etc/mysql/conf.d/slowquery.cnf'
-# # # # # konfigurasi mysql_root_password dibawah akan mengganti konfigurasi bawaan image
-    # environment:
-    #   - MYSQL_ROOT_PASSWORD=anotherpass
-# # # # expose port biasanya diperlukan ketika hendak expose container lintas server
-# # # # JANGAN LUPA CHECK LAGI KETERSEDIAAN PORT
-    # ports:
-    #   - 3306:3306
-    # ulimits:
-    #   nofile:
-    #     soft: 30000
-    #     hard: 30000
-#     networks: 
-#       dock:
-#         ipv4_address: 172.172.0.2
-
-# networks:
-#   dock:
-#     driver: bridge
-#     ipam:
-#      config:
-#       - subnet: 172.172.0.0/30
-#         gateway: 172.172.0.1

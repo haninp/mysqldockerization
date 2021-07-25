@@ -1,5 +1,5 @@
 # mysqldockerization
 
 you can follow my update at :
-* blog.haniperkasa.name or
-* haniperkasa.medium.com
+* http://blog.haniperkasa.name or
+* https://haniperkasa.medium.com

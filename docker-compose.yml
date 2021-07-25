@@ -1,10 +1,10 @@
 version: '2'
 services:
   db:
-    container_name: customdb-5
+    container_name: customdb-4
     image: 'customdb:latest'
     ports: 
-        - 9035:3306
+        - 9034:3306
     volumes:
         - db-one:/var/lib/mysql
 volumes:

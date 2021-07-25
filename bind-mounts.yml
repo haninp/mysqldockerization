@@ -1,0 +1,9 @@
+version: '2'
+services:
+  db:
+    container_name: customdb-6
+    image: 'customdb:latest'
+    ports: 
+        - 9036:3306
+    volumes:
+        - ./db-data:/var/lib/mysql
